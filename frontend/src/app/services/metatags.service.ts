@@ -24,6 +24,7 @@ export class MetatagsService {
     // set default tags, that will be orverwritten below:
     this.metaService.updateTag({ property: 'og:url', content: this.getCanonicalUrl(this.locationService.path()) });
     this.metaService.updateTag({ property: 'og:title', content: 'Volontulo. Portal dla wolontariuszy' });
+    this.metaService.updateTag({ property:= 'og:type'  content:"website"
     this.metaService.updateTag({ property: 'og:description', content: 'Volontulo. Portal dla wolontariuszy'});
     this.metaService.updateTag({ property: 'og:image', content: this.getCanonicalUrl('/assets/img/banner/volontulo_baner.png') });
     this.metaService.updateTag({ property: 'fb:app_id', content: environment.fbAppID });
